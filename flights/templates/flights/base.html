@@ -1,0 +1,14 @@
+<!--adding a css file -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block head %}{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'flights/style.html' %}" />
+</head>
+<body>
+  {% block body %}
+  {% endblock %}
+</body>
+</html>
